@@ -69,12 +69,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StatusActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-              <folding />
+            <state vertical-scroll-proportion="0.4924812" vertical-offset="80" max-vertical-offset="630">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatusFragment.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="StatusFragment.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59398496" vertical-offset="1358" max-vertical-offset="2070">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="2070">
               <caret line="93" column="62" selection-start-line="93" selection-start-column="62" selection-end-line="93" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1234,9 +1236,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_status.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_status.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/new_activity_status.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusActivity.java" />
       </list>
     </option>
   </component>
@@ -1444,8 +1446,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus5_4.4.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="4.3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1710,7 +1712,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="2142">
           <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1761,7 +1765,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="2142">
           <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1815,7 +1821,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="2142">
           <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1869,7 +1877,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="586" max-vertical-offset="2142">
           <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1956,14 +1966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_status.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
@@ -1988,8 +1990,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59398496" vertical-offset="1358" max-vertical-offset="2070">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1358" max-vertical-offset="2070">
           <caret line="93" column="62" selection-start-line="93" selection-start-column="62" selection-end-line="93" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/beacon/peng/yamba/StatusActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4924812" vertical-offset="80" max-vertical-offset="630">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
