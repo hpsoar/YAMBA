@@ -19,8 +19,9 @@ public class StatusContract {
             + "/" + TABLE);
     public static final int STATUS_ITEM = 1;
     public static final int STATUS_DIR = 2;
-    public static final String STATUS_TYPE_ITEM = "vnd.android.cursor.item/vnd.com.marakana.android.yamba.provider.status";
-    public static final String STATUS_TYPE_DIR = "vnd.android.cursor.dir/vnd.com.marakana.android.yamba.provider.status";
+    public static final String CONTENT = "vnd.com.beacon.peng.yamba.provider.status";
+    public static final String STATUS_TYPE_ITEM = "vnd.android.cursor.item/" + CONTENT;
+    public static final String STATUS_TYPE_DIR = "vnd.android.cursor.dir/" + CONTENT;
     public static final String DEFAULT_SORT = Column.CREATED_AT + " DESC";
 
     public class Column {

@@ -53,27 +53,34 @@ public class RefreshService extends IntentService {
         }
         Log.d(TAG, "onStarted");
 
-        DbHelper dbHelper = new DbHelper(this); //
-        SQLiteDatabase db = dbHelper.getWritableDatabase(); //
-
-        ContentValues values = new ContentValues(); //
+        ContentValues values = new ContentValues();
 
         YambaClient cloud = new YambaClient(username, password);
         try {
+            int count = 0;
             List<Status> timeline = cloud.getTimeline(20);
             for (Status status : timeline) {
-                values.clear(); //
+                values.clear();
                 values.put(StatusContract.Column.ID, status.getId());
-                values.put(StatusContract.Column.USER,
-                        status.getUser());
-                values.put(StatusContract.Column.MESSAGE,
-                        status.getMessage());
+                values.put(StatusContract.Column.USER, status.getUser());
+                values.put(StatusContract.Column.MESSAGE, status.getMessage());
                 values.put(StatusContract.Column.CREATED_AT, status
                         .getCreatedAt().getTime());
 
-                db.insertWithOnConflict(StatusContract.TABLE, null, values,
-                        SQLiteDatabase.CONFLICT_IGNORE);//
+                Uri uri = getContentResolver().insert(
+                        StatusContract.CONTENT_URI, values);
+                if (uri != null) {
+                    count++;
+                    Log.d(TAG,
+                            String.format("%s: %s", status.getUser(),
+                                    status.getMessage()));
+                }
+            }
 
+            if (count > 0) {
+                sendBroadcast(new Intent(
+                        "com.marakana.android.yamba.action.NEW_STATUSES").putExtra(
+                        "count", count));
             }
 
         } catch (YambaClientException e) {
