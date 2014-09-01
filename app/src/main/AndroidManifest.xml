@@ -3,6 +3,7 @@
     package="com.beacon.peng.yamba" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <application
         android:allowBackup="true"
@@ -21,7 +22,6 @@
             android:label="@string/status_update" >
             <intent-filter>
                 <action android:name="com.beacon.peng.yamba.action.tweet" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -48,6 +48,20 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.beacon.peng.yamba.SubActivity" />
         </activity>
+
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.beacon.peng.yamba.NotificationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.beacon.peng.yamba.action.NEW_STATUSES" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

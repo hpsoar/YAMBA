@@ -79,7 +79,7 @@ public class RefreshService extends IntentService {
 
             if (count > 0) {
                 sendBroadcast(new Intent(
-                        "com.marakana.android.yamba.action.NEW_STATUSES").putExtra(
+                        "com.beacon.peng.yamba.action.NEW_STATUSES").putExtra(
                         "count", count));
             }
 
